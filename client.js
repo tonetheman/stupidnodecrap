@@ -8,8 +8,10 @@ var options = {
 	port : 9000,
 	headers : {}
 };
+
+// this does not
 //var body = JSON.stringify({ a : 10 });
-var body = "a=10";
+var body = "a=10"; // this works
 options.headers['Content-Type'] = "application/x-www-form-urlencoded";
 options.headers['Content-Length'] = body.length;
 
