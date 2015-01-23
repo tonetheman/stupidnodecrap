@@ -4,6 +4,10 @@ var bodyParser = require('body-parser');
 var util = require("util");
 
 var app = express();
+
+// this appears to be what makes the body appear
+// i think it does not expect json?
+// seems wrong really
 app.use(bodyParser.urlencoded({extended: false}));
 //app.use(bodyParser.json());
 
